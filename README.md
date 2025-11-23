@@ -4,7 +4,7 @@
 
 ---
 ## Encuadre
-El siguiente trabajo aplica los contenidos de la materia "Ciencia de Datos para Economía y Negocios" de la Universidad de Buenos Aires.
+Este trabajo aplica los contenidos de la materia "Ciencia de Datos para Economía y Negocios" de la Universidad de Buenos Aires.
 
 El código que sustenta el trabajo fue desarrollado en **Rstudio**, por lo que se requiere de su instalación previo a ser replicado.  
 
