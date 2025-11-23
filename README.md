@@ -24,24 +24,30 @@ La hipótesis principal plantea que los **Descuentos Afectan Negativamente la Re
 
 ## 00. Organización del Proyecto
 Una vez seleccionada la base de datos, el primer paso implica generar un script inicial que configure el entorno global del proyecto y ordene las carpetas pertinentes.
--  \
-A partir de este script se crean las 4 carpetas en las que se dividirán los archivos del trabajo: **data - functions - output - scripts**.
--  \
+
+\
+A partir de este script se crean 4 carpetas en las que se dividirán los archivos del trabajo: **data - functions - output - scripts**.
+
+\
 En las carpetas mencionadas se guardarán los siguientes archivos:
-**Data**: Datos crudos, limpios y procesados.
-**Functions**: Scripts de funciones predeterminadas que se usan a lo largo del proyecto.
-**Output**: Gráficos y tablas que surgidas a partir del análisis del dataset.
-**Scripts**: Códigos ordenados cronológicamente que abarcan los análisis requeridos a la hora de tratar el dataset.
+
+- **Data**: Datos crudos, limpios y procesados.
+
+- **Functions**: Scripts de funciones predeterminadas que se usan a lo largo del proyecto.
+
+- **Output**: Gráficos y tablas que surgidas a partir del análisis del dataset.
+
+- **Scripts**: Códigos ordenados cronológicamente que abarcan los análisis requeridos a la hora de tratar el dataset.
+
 ---
 ## 01. Carga de Datos
--  \
-Una vez configurado el entorno global, se procede a cargar el dataset crudo para su posterior analísis en Rstudio. 
+- Una vez configurado el entorno global, se procede a cargar el dataset crudo para su posterior analísis en Rstudio. 
 ---
 ## 02. Limpieza
--  \
 A partir de los datos crudos, se continúa con una limpieza de la totalidad de los datos. Se retoma a partir del archivo cargado en el script 01.
 Con el fin de limpiar los datos, se analizan valores faltantes, existencia de outliers y chequeos estructurales del dataset (glimpse + skim).
 Al finalizar el script se guardarán los datos limpios en la carpeta correspondiente. 
+
 ----
 ## 03. EDA
 -  \
