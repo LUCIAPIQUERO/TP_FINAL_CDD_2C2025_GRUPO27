@@ -8,7 +8,7 @@ Este trabajo aplica los contenidos de la materia "Ciencia de Datos para Economí
 
 El código que sustenta el trabajo fue desarrollado en **RStudio**, por lo que se requiere de su instalación previo a ser replicado.  
 
-En los próximos párrafos, el lector tendrá acceso a una guía descriptiva que facilitará el entendimiento del proyecto presentado.
+Este documento ofrece una guía descriptiva que facilita la comprensión del proyecto.
 
 ## Síntesis
 El trabajo consta de la formulación de una hipótesis falsable junto a su posterior análisis y desarrollo a partir de una base de datos seleccionada. 
@@ -103,7 +103,7 @@ Dados los resultados, se toma de referencia el segundo modelo (datos reducidos s
 Paralelamente, se estudia si existe algún patrón en las variables complementarias (categoría, region, segmento) que explique una mayor presencia de outliers. 
 Para ello, se corre un test chi-cuadrado para cada una de las tres variables. 
 
-Dados los resultados, se corre el modelo de regresión principal pero segmentándolo por categría y por región. 
+Dados los resultados, se corre el modelo de regresión principal pero segmentándolo por categoría y por región. 
 
 Finalmente, se corre un modelo de ANOVA para evaluar diferencias significativas en los modelos segmentados.
 
