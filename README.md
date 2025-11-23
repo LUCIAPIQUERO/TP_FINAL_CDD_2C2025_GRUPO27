@@ -45,7 +45,7 @@ Una vez configurado el entorno global, se carga el dataset crudo para su posteri
 
 ---
 ## 02. Limpieza
-A partir de los datos crudos, se limpia de la totalidad de los datos. Se retoma a partir del archivo cargado en el script 01.
+Se retoma a partir del archivo cargado en el script 01. A partir de los datos crudos, se realiza la limpieza del dataset
 
 Con el fin de limpiar los datos, se analizan **valores faltantes, existencia de outliers y chequeos estructurales** del dataset (glimpse + skim).
 
