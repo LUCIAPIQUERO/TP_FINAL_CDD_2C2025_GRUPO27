@@ -5,6 +5,7 @@
 ---
 ## Resumen del Trabajo
 El siguiente trabajo tiene como objetivo la puesta en práctica de los contenidos vistos en la materia Ciencia de Datos para Economía y Negocios en la Universidad de Buenos Aires.
+
 En los parrafos siguientes, el lector podrá tendrá acceso a guía descriptiva que facilitará el entendimiento del código desarrollado en este proyecto. 
 
 
