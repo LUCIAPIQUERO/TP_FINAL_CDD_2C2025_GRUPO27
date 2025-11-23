@@ -102,7 +102,7 @@ Y por último se corre un modelo de ANOVA por cada uno de los dos modelos corrid
 ---
 
 ## PRESENTACIÓN FINAL DEL TRABAJO
-Dentro de este repositorio se encuentra un conjunto de diapostivas que resume los principales análisis y conclusiones obtenidos a paritr de los scripts desarrollados anteriornmente. 
+El repositorio incluye además una presentación conpuesta por diapositivas que sintetiza los principales hallazgos y conclusiones del proyecto.
 
 
 
