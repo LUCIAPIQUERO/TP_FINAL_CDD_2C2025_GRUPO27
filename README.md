@@ -11,7 +11,7 @@ El código que sustenta el trabajo fue desarrollado en **Rstudio**, por lo que s
 En los próximos párrafos, el lector tendrá acceso a una guía descriptiva que facilitará el entendimiento del proyecto presentado.
 
 ## Síntesis
-El trabajo consta de la formulación de una hipotesis falsable junto a su posterior análisis y desarrollo a partir de una base de datos seleccionada. 
+El trabajo consta de la formulación de una hipótesis falsable junto a su posterior análisis y desarrollo a partir de una base de datos seleccionada. 
 
 El dataset seleccionado se compone por las **ventas y ganancias de un supermercado en los Estados Unidos**. 
 
@@ -41,7 +41,7 @@ En las carpetas mencionadas se guardan los siguientes archivos:
 
 ---
 ## 01. Carga de Datos
-Una vez configurado el entorno global, se carga el dataset crudo para su posterior analísis en Rstudio. 
+Una vez configurado el entorno global, se carga el dataset crudo para su posterior análísis en Rstudio. 
 
 ---
 ## 02. Limpieza
@@ -72,13 +72,13 @@ Teniendo un primer análisis del dataset, se continúa con un análisis de las p
 
 Se estudian las medidas de **tendencia central y de dispersión** de las variables de principal relevancia (profit y discount).
 
-Adicionalmente, se estudia la distribución de frecuencias de variables complementarias a la hipotesis principal.
+Adicionalmente, se estudia la distribución de frecuencias de variables complementarias a la hipótesis principal.
 
 Se desarrollan gráficos para visualizar las distintas tendencias estadísticas. 
 
 ---
 ## 05. Inferencia Estadística
-Habiendo hecho un analisis exhaustivo de los datos, se testea la hipótesis planteada en un principio. 
+Habiendo hecho un análisis exhaustivo de los datos, se testea la hipótesis planteada en un principio. 
 
 Considerando la fuerte presencia de outliers, se corren tres **modelos de regresión** para cada escenario: 
 
@@ -95,14 +95,14 @@ Dados los resultados, se toma de referencia el segundo modelo (datos reducidos s
 Paralelamente, se estudia si existe algún patrón en las variables complementarias (category,region, segment) que explique una mayor presencia de outliers. 
 Para ello, se corre un test chi-cuadrado para cada una de las tres variables. 
 
-Dados los resultados, se corre el modelo de regresión principal pero segmentandolo por cartegory y por region. 
+Dados los resultados, se corre el modelo de regresión principal pero segmentandolo por category y por region. 
 
 Y por último se corre un modelo de ANOVA por cada uno de los dos modelos corridos en última instancia. 
 
 ---
 
 ## PRESENTACIÓN FINAL DEL TRABAJO
-El repositorio incluye además una presentación conpuesta por diapositivas que sintetiza los principales hallazgos y conclusiones del proyecto.
+El repositorio incluye además una presentación compuesta por diapositivas que sintetiza los principales hallazgos y conclusiones del proyecto.
 
 
 
