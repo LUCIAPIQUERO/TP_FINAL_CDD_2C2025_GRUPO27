@@ -4,9 +4,9 @@
 
 ---
 ## Encuadre
-El siguiente trabajo tiene como objetivo la puesta en práctica de los contenidos vistos en la materia Ciencia de Datos para Economía y Negocios en la Universidad de Buenos Aires.
+El siguiente trabajo tiene como objetivo la puesta en práctica de los contenidos vistos en la materia Ciencia de Datos para Economía y Negocios de la Universidad de Buenos Aires.
 
-El código que sustenta el trabajo fue desarrollado en Rstudio, por lo que se requiere de su previa instalación en caso de ser replicado.  
+El código que sustenta el trabajo fue desarrollado en Rstudio, por lo que se requiere de su previa instalación antes de ser replicado.  
 
 En los párrafos siguientes, el lector tendrá acceso a guía descriptiva que facilitará el entendimiento del código asociado a este proyecto.
 
