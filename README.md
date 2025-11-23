@@ -13,7 +13,7 @@ En los próximos párrafos, el lector tendrá acceso a una guía descriptiva que
 ## Síntesis
 El trabajo consiste primordialmente en la formulación de una hipotesis falsable junto a su posterior analisis y desarrollo a partir de una base de datos seleccionada. 
 
-El dataset seleccionado presenta **las ventas y ganancias de un supermercado de los Estados Unidos**. 
+El dataset seleccionado presenta **las ventas y ganancias de un supermercado en los Estados Unidos**. 
 
 -----
 ## FORMULACIÓN DE HIPÓTESIS 
