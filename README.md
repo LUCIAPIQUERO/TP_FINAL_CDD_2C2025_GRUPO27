@@ -90,7 +90,7 @@ Dados los resultados, se tomará de referencia el segundo modelo (datos reducido
 - Homocedasticidad
 - Normalidad
 - Independencia
--   
+  
 Paralelamente, se estudia si existe algún patrón en las variables complementarias (category,region, segment) que explique una mayor presencia de outliers. 
 Para ello, se corre un test chi-cuadrado para cada una de las tres variables. 
 
