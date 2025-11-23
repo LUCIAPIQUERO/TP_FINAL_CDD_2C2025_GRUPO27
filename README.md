@@ -31,13 +31,12 @@ A partir de este script se crean 4 carpetas en las que se dividirán los archivo
 
 En las carpetas mencionadas se guardan los siguientes archivos:
 
-- **Data**: Datos crudos, limpios y procesados.
-
-- **Functions**: Scripts de funciones predeterminadas que se usan a lo largo del proyecto.
-
-- **Output**: Gráficos y tablas surgidas a partir del análisis del dataset.
-
-- **Scripts**: Códigos ordenados cronológicamente que cubren los análisis requeridos a la hora de tratar el dataset.
+| Carpeta    | Contenido |
+|------------|-----------|
+| **data**   | Datos crudos, limpios y procesados |
+| **functions** | Scripts de funciones auxiliares reutilizables |
+| **output** | Gráficos y tablas del análisis |
+| **scripts** | Códigos ordenados cronológicamente y segmentados según su utilidad |
 
 ---
 ## 01. Carga de Datos
