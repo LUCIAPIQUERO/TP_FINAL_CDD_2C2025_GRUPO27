@@ -4,82 +4,106 @@
 
 ---
 ## Encuadre
-El siguiente trabajo tiene como objetivo la puesta en práctica de los contenidos vistos en la materia Ciencia de Datos para Economía y Negocios de la Universidad de Buenos Aires.
+El siguiente trabajo tiene como objetivo la puesta en práctica de los contenidos vistos en la materia "Ciencia de Datos para Economía y Negocios" de la Universidad de Buenos Aires.
 
-El código que sustenta el trabajo fue desarrollado en Rstudio, por lo que se requiere de su previa instalación antes de ser replicado.  
+El código que sustenta el trabajo fue desarrollado en **Rstudio**, por lo que se requiere de su instalación previo a ser replicado.  
 
 En los próximos párrafos, el lector tendrá acceso a una guía descriptiva que facilitará el entendimiento del proyecto presentado.
 
 ## Síntesis
-El trabajo consiste primordialmente en la formulación de una hipotesis falsable junto a su posterior analisis y desarrollo a partir de una base de datos seleccionada. 
+El trabajo consta de la formulación de una hipotesis falsable junto a su posterior análisis y desarrollo a partir de una base de datos seleccionada. 
 
-El dataset seleccionado presenta **las ventas y ganancias de un supermercado en los Estados Unidos**. 
+El dataset seleccionado se compone por las **ventas y ganancias de un supermercado en los Estados Unidos**. 
 
 -----
 ## FORMULACIÓN DE HIPÓTESIS 
-La hipótesis principal plantea que los **Descuentos Afectan Negativamente la Rentabilidad**:  
+La hipótesis principal plantea que los **Descuentos Afectan Negativamente la Rentabilidad del Negocio**:  
 - A mayor descuento, menor profit esperado.  
-- Este efecto no es uniforme, sino que depende de la **categoría de producto** y la **región geográfica**, donde se espera encontrar diferencias significativas en la magnitud de la relación.
+- Se intuye que este efecto no es uniforme sino que puede verse influenciado por la **categoría del producto**, la **región geográfica** o el **segmento** al que pertenece el cliente.
+  Por tanto, se espera encontrar diferencias significativas en el comportamiento de cada una de las variables señaladas.
 ------
 
 ## 00. Organización del Proyecto
 Una vez seleccionada la base de datos, el primer paso implica generar un script inicial que configure el entorno global del proyecto y ordene las carpetas pertinentes.
 
-\
 A partir de este script se crean 4 carpetas en las que se dividirán los archivos del trabajo: **data - functions - output - scripts**.
 
-\
 En las carpetas mencionadas se guardarán los siguientes archivos:
 
 - **Data**: Datos crudos, limpios y procesados.
 
 - **Functions**: Scripts de funciones predeterminadas que se usan a lo largo del proyecto.
 
-- **Output**: Gráficos y tablas que surgidas a partir del análisis del dataset.
+- **Output**: Gráficos y tablas surgidas a partir del análisis del dataset.
 
-- **Scripts**: Códigos ordenados cronológicamente que abarcan los análisis requeridos a la hora de tratar el dataset.
+- **Scripts**: Códigos ordenados cronológicamente que cubren los análisis requeridos a la hora de tratar el dataset.
 
 ---
 ## 01. Carga de Datos
-- Una vez configurado el entorno global, se procede a cargar el dataset crudo para su posterior analísis en Rstudio. 
+Una vez configurado el entorno global, se procede a cargar el dataset crudo para su posterior analísis en Rstudio. 
+
 ---
 ## 02. Limpieza
 A partir de los datos crudos, se continúa con una limpieza de la totalidad de los datos. Se retoma a partir del archivo cargado en el script 01.
-Con el fin de limpiar los datos, se analizan valores faltantes, existencia de outliers y chequeos estructurales del dataset (glimpse + skim).
-Al finalizar el script se guardarán los datos limpios en la carpeta correspondiente. 
+
+Con el fin de limpiar los datos, se analizan **valores faltantes, existencia de outliers y chequeos estructurales** del dataset (glimpse + skim).
+
+Al finalizar el script se guardarán los **datos limpios** en la carpeta correspondiente. 
 
 ----
 ## 03. EDA
--  \
-Se procede a explorar el dataset limpio.
--  \
-Se decide reducir los datos seleccionando unicamente las variables de interés en función de la hipótesis inicial.
-Se estudian las características principales del dataset reducido. 
-Luego se procede a realizar una correlación simple entre las variables principales (Profit y Discount).
-A su vez, se analiza la presencia de Outliers. Se detecta una fuerte presencia de outliers (18%) por lo que se procede a comparar las estadisticas principales con y sin outliers. 
--  \
+Contando con los datos limpios, se procede a explorar el dataset en profundidad.
+Para ello, se decide reducir los datos seleccionando unicamente las variables de interés en función de la hipótesis inicial.
 Las variables de interés serán **Profit; Discount; Category; Region y Segment**, adicionalmente se seleccionará la variable **"Order Id"** por motivos precautorios de trazabilidad. 
+
+Se procede a realizar una **correlación simple** entre las variables principales (Profit y Discount).
+
+A su vez, se analiza la presencia de **Outliers**. 
+Se detecta una fuerte presencia de outliers **(18%)** por lo que se procede a comparar las estadisticas principales con y sin outliers.
+Se decide evaluar el comportamiento de los outliers por Categoría, Región y Segmento a fin de tener una incipiente noción de su influencia previo al análisis final. 
+
+Se decide **no eliminar los outliers** del total de los datos ya que representan una parte importante de ellos.
+En el Script 05 se analizará el comportamiento de los outliers como un grupo separado. 
+
 ----
 ## 04. Estadística Descriptiva
--  \
-Se estudian las medidas de tendencia central y de dispersión de las variables de principal relevancia (profit y discount).
-A su vez se estudia la distribución de variables complementarias a la hipotesis principal.
+Teniendo un primer análisis del dataset, se continúa con un análisis de las principales medidas estadísticas de las variables de interés. 
+
+Se estudian las medidas de **tendencia central y de dispersión** de las variables de principal relevancia (profit y discount).
+
+Adicionalmente, se estudia la distribución de frecuencias de variables complementarias a la hipotesis principal.
+
 Se desarrollan gráficos para visualizar las distintas tendencias estadísticas. 
+
 ---
 ## 05. Inferencia Estadística
-Habiendo hecho un analisis exhaustivo de los datos, procedemos a correr el test planteado en un principio. 
-Corremos tres modelos de regresión. Uno para el total de los datos relevantes, otro para los datos sin outliers y otro solo para los outliers. 
+Habiendo hecho un analisis exhaustivo de los datos, se procede con el test de hipótesis planteado en un principio. 
 
--  \
-Luego, testeamos los supuestos de regresión...
--  \
-Luego analizamos la dependendia de los outliers con las variables categoricas
--  \
-EN funcion de eso corremos dos modelos segmentados y luego dos anova para testear supuestos.
+Consideranod la fuerte presencia de outliers, corremos tres **modelos de regresión** para cada escenario: 
+
+1. Totalidad de los datos reducidos.
+2. Datos reducidos sin outliers.
+3. Solo outliers. 
+
+Dados los resultados, se tomará de referencia el segundo modelo (datos reducidos sin outliers) y se testeará el cumplimiento de los supuestos de regresión. 
+- Linealidad
+- Homocedasticidad
+- Normalidad
+- Independencia
+-   
+Paralelamente, se estudia si existe algún patrón en las variables complementarias (category,region, segment) que explique una mayor presencia de outliers. 
+Para ello, se corre un test chi-cuadrado para cada una de las tres variables. 
+
+Dados los resultados, corremos el modelo de regresión principal pero segmentandolo por cartegory y por region. 
+
+Y por último corremos un modelo de ANOVA por cada uno de los dos modelos corridos en última instancia. 
 
 ---
+
 ## PRESENTACIÓN FINAL DEL TRABAJO
-Dentro de este repositorio se podrá encontrar una presentación compuesta por diapositivas que tienen como fin explicitar las conclusiones relevantes del proyecto. 
+Dentro de este repositorio se podrá encontrar un conjunto de diapostivas que resumirán los principales análisis y conclusiones obtenidos a paritr de los scripts desarrollados anteriornmente. 
+
+
 
 
 
