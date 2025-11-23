@@ -17,7 +17,8 @@ El dataset seleccionado se compone por las **ventas y ganancias de un supermerca
 
 -----
 ## FORMULACIÓN DE HIPÓTESIS 
-La hipótesis principal plantea que los **Descuentos Afectan Negativamente la Rentabilidad del Negocio**:  
+La hipótesis central es que los **Descuentos Reducen Significativamente la Rentabilidad**. 
+Este efecto se espera heterogéneo según **categoría de producto, región y segmento de cliente**.
 - A mayor descuento, menor profit esperado.  
 - Se intuye que este efecto no es uniforme sino que puede verse influenciado por la **categoría del producto**, la **región geográfica** o el **segmento** al que pertenece el cliente.
   Por tanto, se espera encontrar diferencias significativas en el comportamiento de cada una de las variables señaladas.
