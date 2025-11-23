@@ -6,7 +6,7 @@
 ## Encuadre
 Este trabajo aplica los contenidos de la materia "Ciencia de Datos para Economía y Negocios" de la Universidad de Buenos Aires.
 
-El código que sustenta el trabajo fue desarrollado en **Rstudio**, por lo que se requiere de su instalación previo a ser replicado.  
+El código que sustenta el trabajo fue desarrollado en **RStudio**, por lo que se requiere de su instalación previo a ser replicado.  
 
 En los próximos párrafos, el lector tendrá acceso a una guía descriptiva que facilitará el entendimiento del proyecto presentado.
 
@@ -40,26 +40,24 @@ En las carpetas mencionadas se guardan los siguientes archivos:
 
 ---
 ## 01. Carga de Datos
-Una vez configurado el entorno global, se carga el dataset crudo para su posterior análísis en Rstudio. 
+Una vez configurado el entorno global, se carga el dataset crudo para su posterior análisis en Rstudio. 
 
 ---
 ## 02. Limpieza
-Se retoma a partir del archivo cargado en el script 01. A partir de los datos crudos, se realiza la limpieza del dataset
-
-Con el fin de limpiar los datos, se analizan **valores faltantes, existencia de outliers y chequeos estructurales** del dataset (glimpse + skim).
+A partir de los datos crudos, se realiza la limpieza del dataset, analizando **valores faltantes, outliers y estructura**.
 
 Al finalizar el script se guardan los **datos limpios** en la carpeta correspondiente. 
 
 ----
 ## 03. EDA
 Contando con los datos limpios, se explora el dataset en profundidad.
-Para ello, se reducen los datos seleccionando unicamente las variables de interés en función de la hipótesis inicial.
+Para ello, se reducen los datos seleccionando únicamente las variables de interés en función de la hipótesis inicial.
 Las variables de interés serán **Profit; Discount; Category; Region y Segment**, adicionalmente se selecciona la variable **"Order Id"** por motivos precautorios de trazabilidad. 
 
 Se realiza una **correlación simple** entre las variables principales (Profit y Discount).
 
 A su vez, se analiza la presencia de **Outliers**. 
-Se detecta una fuerte presencia de outliers **(18%)** por lo que se comparan las estadisticas principales con y sin outliers.
+Se detecta una fuerte presencia de outliers **(18%)** por lo que se comparan las estadísticas principales con y sin outliers.
 Se evalúa el comportamiento de los outliers por Categoría, Región y Segmento a fin de tener una incipiente noción de su influencia previo al análisis final. 
 
 Se decide **no eliminar los outliers** del total de los datos ya que representan una parte importante de ellos.
@@ -91,12 +89,12 @@ Dados los resultados, se toma de referencia el segundo modelo (datos reducidos s
 - Normalidad
 - Independencia
   
-Paralelamente, se estudia si existe algún patrón en las variables complementarias (category,region, segment) que explique una mayor presencia de outliers. 
+Paralelamente, se estudia si existe algún patrón en las variables complementarias (categoría, region, segmento) que explique una mayor presencia de outliers. 
 Para ello, se corre un test chi-cuadrado para cada una de las tres variables. 
 
-Dados los resultados, se corre el modelo de regresión principal pero segmentandolo por category y por region. 
+Dados los resultados, se corre el modelo de regresión principal pero segmentándolo por categría y por región. 
 
-Y por último se corre un modelo de ANOVA por cada uno de los dos modelos corridos en última instancia. 
+Finalmente, se corre un modelo de ANOVA para evaluar diferencias significativas en los modelos segmentados.
 
 ---
 
