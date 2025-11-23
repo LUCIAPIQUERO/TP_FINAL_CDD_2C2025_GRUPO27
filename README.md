@@ -38,6 +38,17 @@ En las carpetas mencionadas se guardan los siguientes archivos:
 | **output** | Gráficos y tablas del análisis |
 | **scripts** | Códigos ordenados cronológicamente y segmentados según su utilidad |
 
+### A su vez, el contenido del proyecto se divide en los siguientes scripts: 
+
+| Script | Contenido principal |
+|--------|---------------------|
+| **00** | Configuración global y organización de carpetas |
+| **01** | Carga de datos crudos |
+| **02** | Limpieza de datos: renombrado, valores faltantes, outliers |
+| **03** | Análisis exploratorio (EDA) y correlaciones |
+| **04** | Estadística descriptiva y visualizaciones |
+| **05** | Inferencia estadística: regresiones, supuestos, segmentaciones y ANOVA |
+
 ---
 ## 01. Carga de Datos
 Una vez configurado el entorno global, se carga el dataset crudo para su posterior análisis en Rstudio. 
