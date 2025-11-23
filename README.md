@@ -3,10 +3,19 @@
 ### Alumna: Lucía Piquero - 903431
 
 ---
-## Resumen del Trabajo
+## Encuadre
 El siguiente trabajo tiene como objetivo la puesta en práctica de los contenidos vistos en la materia Ciencia de Datos para Economía y Negocios en la Universidad de Buenos Aires.
 
-En los parrafos siguientes, el lector podrá tendrá acceso a guía descriptiva que facilitará el entendimiento del código desarrollado en este proyecto. 
+El código que sustenta el trabajo fue desarrollado en Rstudio, por lo que se requiere de su previa instalación en caso de ser replicado.  
+
+En los párrafos siguientes, el lector tendrá acceso a guía descriptiva que facilitará el entendimiento del código asociado a este proyecto.
+
+## Síntesis
+El trabajo consiste primordialmente en la formulación de una hipotesis falsable junto a su posterior analisis y desarrollo a partir de una base de datos seleccionada. 
+
+El dataset seleccionado contiene las ventas y ganancias de un determinado supermercado de los Estados Unidos. 
+
+
 
 
 
