@@ -13,11 +13,11 @@ En los próximos párrafos, el lector tendrá acceso a una guía descriptiva que
 ## Síntesis
 El trabajo consiste primordialmente en la formulación de una hipotesis falsable junto a su posterior analisis y desarrollo a partir de una base de datos seleccionada. 
 
-El dataset seleccionado contiene las ventas y ganancias de un determinado supermercado de los Estados Unidos. 
+El dataset seleccionado refleja las ventas y ganancias de un determinado supermercado de los Estados Unidos. 
 
 -----
 ## FORMULACIÓN DE HIPÓTESIS 
-La hipótesis central del análisis es que los **descuentos afectan negativamente la rentabilidad**:  
+La hipótesis principal plantea que los **Descuentos Afectan Negativamente la Rentabilidad**:  
 - A mayor descuento, menor profit esperado.  
 - Este efecto no es uniforme, sino que depende de la **categoría de producto** y la **región geográfica**, donde se espera encontrar diferencias significativas en la magnitud de la relación.
 ------
@@ -29,27 +29,28 @@ A partir de este script se crean las 4 carpetas en las que se dividirán los arc
 -  \
 En las carpetas mencionadas se guardarán los siguientes archivos:
 **Data**: Datos crudos, limpios y procesados.
-**Functions**: Scripts de funciones predeterminadas que se usan a lo largo del proyecto
-**Output**: Gráficos y Tablas que surgen a lo largo del análisis del dataset.
-**Scripts**: Códigos ordenados cronológicamente que abarcan los análisis requeridos a la hora de tratar un dataset.
+**Functions**: Scripts de funciones predeterminadas que se usan a lo largo del proyecto.
+**Output**: Gráficos y tablas que surgidas a partir del análisis del dataset.
+**Scripts**: Códigos ordenados cronológicamente que abarcan los análisis requeridos a la hora de tratar el dataset.
 ---
 ## 01. Carga de Datos
 -  \
-Una vez configurado el entorno global, se procede a cargar el dataset pertinente para su posterior analísis. 
+Una vez configurado el entorno global, se procede a cargar el dataset crudo para su posterior analísis en Rstudio. 
 ---
 ## 02. Limpieza
 -  \
-Una vez cargado el dataset, se continúa con una limpieza inicial de la totalidad de los datos.
-Para ello renombramos las variables y detectamos outliers. 
+A partir de los datos crudos, se continúa con una limpieza de la totalidad de los datos. Se retoma a partir del archivo cargado en el script 01.
+Con el fin de limpiar los datos, se analizan valores faltantes, existencia de outliers y chequeos estructurales del dataset (glimpse + skim).
+Al finalizar el script se guardarán los datos limpios en la carpeta correspondiente. 
 ----
 ## 03. EDA
 -  \
-Luego de asegurarse que los datos se encuentran limpios, sin valores extraños, se procede a realizar un análisis exploratorio de datos más exhaustivo.
+Se procede a explorar el dataset limpio.
 -  \
-En principio se seleccionan unicamente las variables de interes a partir de las cuales se desarrollará la hipótesis planteada en un principio.
-Ello se realiza para obtener medidas más concretas y útiles para el analista.
-
-Se estudia la presencia de una correlación entre las variables principales. 
+Se decide reducir los datos seleccionando unicamente las variables de interés en función de la hipótesis inicial.
+Se estudian las características principales del dataset reducido. 
+Luego se procede a realizar una correlación simple entre las variables principales (Profit y Discount).
+A su vez, se analiza la presencia de Outliers. Se detecta una fuerte presencia de outliers (18%) por lo que se procede a comparar las estadisticas principales con y sin outliers. 
 -  \
 Las variables de interés serán **Profit; Discount; Category; Region y Segment**, adicionalmente se seleccionará la variable **"Order Id"** por motivos precautorios de trazabilidad. 
 ----
