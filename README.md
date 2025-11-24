@@ -110,7 +110,7 @@ Finalmente, se corre un modelo de ANOVA para evaluar diferencias significativas 
 ---
 
 ## PRESENTACIÓN FINAL DEL TRABAJO
-El repositorio incluye además una presentación compuesta por diapositivas realizadas que sintetizan los principales hallazgos y conclusiones del proyecto.
+El repositorio incluye además una presentación compuesta por diapositivas que sintetizan los principales hallazgos y conclusiones del proyecto.
 
 
 
