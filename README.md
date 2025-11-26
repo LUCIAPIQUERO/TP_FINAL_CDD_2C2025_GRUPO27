@@ -4,9 +4,11 @@
 
 ---
 ## Encuadre
-Este trabajo aplica los contenidos de la materia "Ciencia de Datos para Economía y Negocios" de la Universidad de Buenos Aires.
+El presente trabajo integra los contenidos de la materia "Ciencia de Datos para Economía y Negocios" de la Universidad de Buenos Aires.
 
 El código que sustenta el trabajo fue desarrollado en **RStudio**, por lo que se requiere de su instalación previo a ser replicado.  
+
+El código utiliza la función "here" por lo que el código está pensado para usarse como un  **RStudio Project (.Rproj)**. 
 
 Este documento ofrece una guía descriptiva que facilita la comprensión del proyecto.
 
@@ -47,7 +49,7 @@ En las carpetas mencionadas se guardan los siguientes archivos:
 | **02** | Limpieza de datos: renombrado, valores faltantes, outliers |
 | **03** | Análisis exploratorio (EDA) y correlaciones |
 | **04** | Estadística descriptiva y visualizaciones |
-| **05** | Inferencia estadística: regresiones, supuestos, segmentaciones y ANOVA |
+| **05** | Inferencia estadística: regresiones, supuestos y segmentaciones |
 
 ---
 ## 01. Carga de Datos
@@ -71,8 +73,6 @@ A su vez, se analiza la presencia de **Outliers**.
 Se detecta una fuerte presencia de outliers **(18%)** por lo que se comparan las estadísticas principales con y sin outliers.
 Se evalúa el comportamiento de los outliers por Categoría, Región y Segmento a fin de tener una incipiente noción de su influencia previo al análisis final. 
 
-Se decide **no eliminar los outliers** del total de los datos ya que representan una parte importante de ellos.
-A partir de esta conclusión, en el Script 05 se analiza el comportamiento de los outliers como un grupo separado. 
 
 ----
 ## 04. Estadística Descriptiva
@@ -88,13 +88,10 @@ Se desarrollan gráficos para visualizar las distintas tendencias estadísticas.
 ## 05. Inferencia Estadística
 Habiendo hecho un análisis exhaustivo de los datos, se testea la hipótesis planteada en un principio. 
 
-Considerando la fuerte presencia de outliers, se corren tres **modelos de regresión** para cada escenario: 
+Previo a ello, se decide eliminar los outliers para analizar el coportamiento más representativo de la muestra. 
 
-1. Totalidad de los datos reducidos.
-2. Datos reducidos sin outliers.
-3. Solo outliers. 
+Dados los resultados, se testea el cumplimiento de los supuestos de regresión. 
 
-Dados los resultados, se toma de referencia el segundo modelo (datos reducidos sin outliers) y se testea el cumplimiento de los supuestos de regresión. 
 - Linealidad
 - Homocedasticidad
 - Normalidad
