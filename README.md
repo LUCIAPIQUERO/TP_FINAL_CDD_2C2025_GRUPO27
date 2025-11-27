@@ -97,17 +97,17 @@ Dados los resultados, se testea el cumplimiento de los supuestos de regresión.
 - Normalidad
 - Independencia
   
-Paralelamente, se estudia si existe algún patrón en las variables complementarias (categoría, region, segmento) que explique una mayor presencia de outliers. 
+Paralelamente, se estudia si existe dependencia significativa de la variable profit para con alguna de las variables complementarias (categoría, region, segmento).  
 Para ello, se corre un test chi-cuadrado para cada una de las tres variables. 
 
-Dados los resultados, se corre el modelo de regresión principal pero segmentándolo por categoría y por región. 
+Dados los resultados, se concluye que tanto "Category" como "Region" rechazan H0. 
 
-Finalmente, se corre un modelo de ANOVA para evaluar diferencias significativas en los modelos segmentados.
+Se corre el modelo de regresión principal pero segmentándolo por categoría y por región. 
 
 ---
 
 ## PRESENTACIÓN FINAL DEL TRABAJO
-El repositorio incluye además una presentación compuesta por diapositivas que sintetizan los principales hallazgos y conclusiones del proyecto.
+El repositorio incluye una presentación compuesta por diapositivas que sintetizan los principales hallazgos y conclusiones del proyecto.
 
 
 
