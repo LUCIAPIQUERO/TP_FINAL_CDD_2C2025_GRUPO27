@@ -84,6 +84,11 @@ info_outliers <- detectar_atipicos(datos_reducidos, "profit")
 datos_outliers <- datos_reducidos[datos_reducidos$profit %in% info_outliers$valores, ]
 datos_no_outliers <- datos_reducidos[!(datos_reducidos$profit %in% info_outliers$valores), ]
 
+# Guardar dataset sin outliers en carpeta processed
+saveRDS(datos_no_outliers, file.path("data/processed", "datos_no_outliers.rds"))
+readr::write_csv(datos_no_outliers, file.path("data/processed", "datos_no_outliers.csv"))
+mensaje_exito("Dataset sin outliers guardado en carpeta processed")
+             
 cat("Cantidad de outliers detectados:", info_outliers$cantidad, "\n")
 cat("Porcentaje sobre total:", round(info_outliers$porcentaje, 2), "%\n")
 
